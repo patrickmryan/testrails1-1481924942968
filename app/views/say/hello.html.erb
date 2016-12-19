@@ -19,14 +19,13 @@
 		  </table>
 		  
 		  <br>
+		  <b>Environment dump<b></p>
 		  <ul>
-		  <%=
-		  result = ''
-		  @env.each do |key, value| 
-		     result = result + "<li>" + key + " -> " + value + "</li>"
-		  end
-		  result
-		   %>
+		  <% @env.each do |key, value| %>
+		  <li>
+		  <%= key + " -> " + value %>
+		  </li>
+		  <% end %>
 		  </ul>
 		  
 	</BODY>

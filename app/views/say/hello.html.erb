@@ -17,5 +17,17 @@
 			  </td>
 			</tr>
 		  </table>
+		  
+		  <br>
+		  <ul>
+		  <%=
+		  result = ''
+		  @env.each do |key, value| 
+		     result = result + "<li>" + key + " -> " + value + "</li>"
+		  end
+		  result
+		   %>
+		  </ul>
+		  
 	</BODY>
 </HTML>

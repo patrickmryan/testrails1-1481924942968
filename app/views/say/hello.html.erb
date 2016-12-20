@@ -21,9 +21,9 @@
 		  <br>
 		  <b>Environment dump<b></p>
 		  <ul>
-		  <% @env.each do |key, value| %>
+		  <% @env.keys.sort.each do |key| %>
 		  <li>
-		  <%= key + " -> " + value %>
+		  <%= key + " -> " + @env[key] %>
 		  </li>
 		  <% end %>
 		  </ul>
